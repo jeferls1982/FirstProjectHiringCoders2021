@@ -9,147 +9,145 @@
 
 <body>
     <section class="section-container background-section">
-        <img src="static/logo.jpg" alt="" height="auto" width="60%">
+        <img src="static/logo.jpg" alt="" height="auto" width="90%">
     </section>
 
 
     <div class="header">
-        <h3 id="text-nav">Black Friday <small>Gama Academy</small><small>cadastrados: <span
-                    id="count_email"></span></small> </h3>
+        <h3 id="text-nav">Black Friday
+            <small><a href="https://www.gama.academy/" target="_blank">Gama Academy</a> </small>
+            <span>cadastrados: <small id="count_email"> </small></span>
+
+        </h3>
 
     </div>
-    <section class="section-container section_amarelo">
-        <div class="row">
-            <div class="col-3 menu left">
-                <!-- --------------------------------------------slides    -------------->
-                <section id="div-slides">
-                    <div class="card-footer">
-                        <span id="frete-gratis">Itens com Frete Grátis</span>
-                    </div>
-                    <div class="card-header">
-                        <span id="off">Até 70% off</span>
-                    </div>
-                    <div class="card-body">
-                        <section class="img-slide">
-                            <img class="slides" src="static/geladeira.jpeg">
-                            <img class="slides" src="static/ventilador.jpg">
-                            <img class="slides" src="static/mondas.jpeg">
-                        </section>
-                    </div>
 
-                </section>
-                <!-- --------------------------------------------fim  slides    -------------->
+
+    <section class="section-container section_presente">
+        <div class="col-4">
+        </div>
+
+
+        <div id="presentes" class="col-6">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="static/eletro1.jpg" alt="eletro" class="img_galery">
+                </a>
+
             </div>
 
-            <div class="col-6">
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="static/eletro1.jpg" alt="Cinque Terre" class="img-promo">
-                    </a>
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="static/eletro2.jpg" alt="Forest" class="img_galery">
+                </a>
 
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                        <img src="static/eletro2.jpg" alt="Forest" class="img-promo">
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                        <img src="static/geladeira.jpeg" alt="Northern Lights" class="img-promo">
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_mountains.jpg">
-                        <img src="static/mondas.jpeg" alt="Mountains" class="img-promo">
-                    </a>
-
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                        <img src="static/ventilador.jpg" alt="Cinque Terre" class="img-promo">
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                        <img src="static/tv.jpeg" alt="Forest" class="img-promo">
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                        <img src="static/computador.jpg" alt="Northern Lights" class="img-promo">
-                    </a>
-
-                </div>
-
-                <div class="gallery">
-                    <a target="_blank" href="img_mountains.jpg">
-                        <img src="static/jbl.jpg" alt="Mountains" class="img-promo">
-                    </a>
-
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="img_mountains.jpg">
-                        <img src="static/tv.jpg" alt="Mountains" class="img-promo">
-                    </a>
-
-                </div>
             </div>
 
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="static/tv.jpeg" alt="Northern Lights" class="img_galery">
+                </a>
 
+            </div>
 
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="static/mondas.jpeg" alt="Mountains" class="img_galery">
+                </a>
 
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="static/computador.jpg" alt="Cinque Terre" class="img_galery">
+                </a>
 
+            </div>
 
+            <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="static/tv.jpeg" alt="Forest" class="img_galery">
+                </a>
 
+            </div>
 
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="static/computador.jpg" alt="Northern Lights" class="img_galery">
+                </a>
 
+            </div>
 
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="static/jbl.jpg" alt="Mountains" class="img_galery">
+                </a>
 
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="static/tv.jpg" alt="Mountains" class="img_galery">
+                </a>
 
-
-
-
-
-            <div class="col-3 right">
-                <div class="aside">
-                    <form id="form_cadastro" method="POST" class="form_cadastro" onsubmit="save_email()">
-                        <p class="input_cadastro">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome">
-
-                        </p>
-                        <p class="input_cadastro">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </p>
-                        <p class="input_cadastro">
-                        <div id="loading" class="loading" style="display: none;">
-                            <img src="static/load.gif" alt="">
-                        </div>
-                        <small id="erro" style="display: none;"></small>
-                        <small id="success" style="display: none;"></small>
-                        </p>
-                        <p class="center">
-                            <input type="submit" id="submit" />
-                        </p>
-
-                    </form>
-                </div>
             </div>
         </div>
 
 
+
     </section>
-    <section class=" section_vermelho">
+
+
+
+
+
+
+    <section class=" section_amarelo">
+        <!-- --------------------------------------------slides    -------------->
+        <section id="div-slides">
+            <div class="card-footer">
+                <span id="frete-gratis">Itens com Frete Grátis</span>
+            </div>
+            <div class="card-header">
+                <span id="off">Até 70% off</span>
+            </div>
+            <div class="card-body">
+                <section class="img-slide">
+                    <img class="slides" src="static/geladeira.jpeg">
+                    <img class="slides" src="static/ventilador.jpg">
+                    <img class="slides" src="static/mondas.jpeg">
+                </section>
+            </div>
+
+        </section>
+        <!-- --------------------------------------------fim  slides    -------------->
+
+
+        <!-- -------------------------------------------------------form cadastro -->
+        <div class="aside">
+            <form id="form_cadastro" method="POST" class="form_cadastro" onsubmit="save_email()">
+                <p class="input_cadastro">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+
+                </p>
+                <p class="input_cadastro">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </p>
+                <p class="input_cadastro">
+                <div id="loading" class="loading" style="display: none;">
+                    <img src="static/load.gif" alt="">
+                </div>
+                <small id="erro" style="display: none;"></small>
+                <small id="success" style="display: none;"></small>
+                </p>
+                <p class="center">
+                    <input type="submit" id="submit" />
+                </p>
+            </form>
+        </div>
+
+        <!-- ------------------------------------------------------fim form cadastro -->
+
 
 
     </section>
