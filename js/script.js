@@ -22,8 +22,8 @@ count.innerHTML = 0;
 if (!localStorage.getItem('list')) {
   let arr = [];
   localStorage.setItem('list', JSON.stringify(arr));
-}else{
-  setCount()  
+} else {
+  setCount()
 }
 
 
@@ -41,6 +41,7 @@ var loading = document.getElementById('loading');
 var erro = document.getElementById('erro');
 var success = document.getElementById('success');
 const btn = document.getElementById('submit');
+var info = document.getElementById('info')
 
 
 
@@ -49,27 +50,41 @@ const btn = document.getElementById('submit');
 
 
 btn.addEventListener("click", function (e) {
+  info.style.display = 'none';
   e.preventDefault();
   loading.style.display = 'block'
-  var list = JSON.parse(localStorage.getItem('list'));
-  load = true;
-  //--------------------------------------------setTimeout(() => {  loading.style.display = 'none'; }, 1000);
-  let cadastro = setDados();
-  if (cadastro) {
-    list.push(cadastro);
-    list = JSON.stringify(list);   
-    localStorage.setItem('list', list);
-    setCount();
-    limpaCampos();
-    success.style.display = 'block';
-    success.innerHTML = "Email cadastrado com sucesso ;)"
+  setTimeout(function () {
+    loading.style.display = 'none';
+    var list = JSON.parse(localStorage.getItem('list'));
 
-  } else {
-    limpaCampos();
-    erro.style.display = "block"
-    erro.innerHTML = "Algo deu errado :(   Tente novamente! "
-    return false
-  }
+    //--------------------------------------------setTimeout(() => {  loading.style.display = 'none'; }, 1000);
+    let cadastro = setDados();
+    if (cadastro) {
+      list.push(cadastro);
+      list = JSON.stringify(list);
+      localStorage.setItem('list', list);
+      setCount();
+      limpaCampos();
+      success.style.display = 'block';
+      success.innerHTML = "Email cadastrado com sucesso ;)"
+      setTimeout(function () {
+        success.style.display = "none";
+      }, 2000);
+      info.style.display = 'block';
+
+    } else {
+      limpaCampos();
+      erro.style.display = "block";
+      erro.innerHTML = "Algo deu errado :(   Tente novamente! "
+      setTimeout(function () {
+        erro.style.display = "none";
+      }, 2000);
+      info.style.display = 'block';
+     
+      return false
+    }
+  }, 2000);
+
 
 });
 
@@ -77,8 +92,8 @@ function setDados() {
   let nome = document.getElementById('nome').value;
   let email = document.getElementById('email').value;
   var cadastro = new Cadastro(nome, email);
-  if (validaCampos(cadastro)) {    
-    return cadastro;    
+  if (validaCampos(cadastro)) {
+    return cadastro;
   } else {
     return false;
   }
@@ -88,8 +103,12 @@ function validaCampos(cadastro) {
   if (cadastro.nome == '' || cadastro.email == "") {
     erro.style.display = "block"
     erro.innerHTML = "Preencha todos os campos!"
+    setTimeout(function () {
+      erro.style.display = "none";
+    }, 2000);
+    info.style.display = 'block';
     return false
-  }  
+  }
   return true
 }
 
@@ -100,12 +119,12 @@ function limpaCampos() {
   success.style.display = "none"
 }
 
-function setCount(){
-  let list = JSON.parse(localStorage.getItem('list'));  
+function setCount() {
+  let list = JSON.parse(localStorage.getItem('list'));
   count.innerHTML = list.length;
 }
 
-function loader(){
+function loader() {
   load = !load;
 }
 

@@ -3,94 +3,94 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Imperdível</title>
 </head>
 
 <body>
+
     <section class="section-container background-section">
         <img src="static/logo.jpg" alt="" height="auto" width="90%">
     </section>
 
 
-    <div class="header">
-        <h3 id="text-nav">Black Friday
+    <div class="header_nav">
+        <h3 id="text-nav"><a href="index.html">Black Friday</a> 
             <small><a href="https://www.gama.academy/" target="_blank">Gama Academy</a> </small>
-            <span>cadastrados: <small id="count_email"> </small></span>
+            <span><a href="emails.html"> Cadastrados: <small id="count_email"> </small></a></span>
 
         </h3>
 
     </div>
 
 
-    <section class="section-container section_presente">
-        <div class="col-4">
+    <section class="section-container section_presente ">
+        <div class="col-sm-4 ">
+
         </div>
 
 
-        <div id="presentes" class="col-6">
-            <div class="gallery">
-                <a target="_blank" href="img_5terre.jpg">
-                    <img src="static/eletro1.jpg" alt="eletro" class="img_galery">
-                </a>
 
+        <div class="col-sm-4 d-flex justify-content-center">
+            <!-- --------------------------------------------slides    -------------->
+            <section id="div-slides">
+                <div class="slides-top">
+                    <span id="frete-gratis">Itens com Frete Grátis</span>
+                </div>
+                <div class="slides-top">
+                    <span id="off">Até 70% off</span>
+                </div>
+                <div class="">
+                    <section class="img-slide">
+                        <img class="slides" src="static/geladeira.jpeg">
+                        <img class="slides" src="static/ventilador.jpg">
+                        <img class="slides" src="static/mondas.jpeg">
+                    </section>
+                </div>
+
+            </section>
+            <!-- --------------------------------------------fim  slides    -------------->
+
+        </div>
+        <div class="col-sm-4 galeria d-none d-md-block">
+            <div class="row">
+                <div class="col-4 ">
+                    <img src="static/eletro1.jpg" alt="eletro" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4 ">
+                    <img src="static/eletro2.jpg" alt="Forest" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4 ">
+                    <img src="static/tv.jpeg" alt="Northern Lights" class="img_galery img-thumbnail">
+                </div>
             </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="static/mondas.jpeg" alt="Mountains" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4">
+                    <img src="static/jbl.jpg" alt="Mountains" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4 ">
+                    <img src="static/tv.jpg" alt="Mountains" class="img_galery img-thumbnail">
 
-            <div class="gallery">
-                <a target="_blank" href="img_forest.jpg">
-                    <img src="static/eletro2.jpg" alt="Forest" class="img_galery">
-                </a>
-
+                </div>
             </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="static/geladeira.jpeg" alt="Mountains" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4">
+                    <img src="static/ventilador.jpg" alt="Mountains" class="img_galery img-thumbnail">
+                </div>
+                <div class="col-4 ">
+                    <img src="static/tv.jpg" alt="Mountains" class="img_galery img-thumbnail">
 
-            <div class="gallery">
-                <a target="_blank" href="img_lights.jpg">
-                    <img src="static/tv.jpeg" alt="Northern Lights" class="img_galery">
-                </a>
-
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_mountains.jpg">
-                    <img src="static/mondas.jpeg" alt="Mountains" class="img_galery">
-                </a>
-
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="img_5terre.jpg">
-                    <img src="static/computador.jpg" alt="Cinque Terre" class="img_galery">
-                </a>
-
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_forest.jpg">
-                    <img src="static/tv.jpeg" alt="Forest" class="img_galery">
-                </a>
-
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_lights.jpg">
-                    <img src="static/computador.jpg" alt="Northern Lights" class="img_galery">
-                </a>
-
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_mountains.jpg">
-                    <img src="static/jbl.jpg" alt="Mountains" class="img_galery">
-                </a>
-
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="img_mountains.jpg">
-                    <img src="static/tv.jpg" alt="Mountains" class="img_galery">
-                </a>
-
+                </div>
             </div>
         </div>
-
 
 
     </section>
@@ -100,29 +100,14 @@
 
 
 
-    <section class=" section_amarelo">
-        <!-- --------------------------------------------slides    -------------->
-        <section id="div-slides">
-            <div class="card-footer">
-                <span id="frete-gratis">Itens com Frete Grátis</span>
-            </div>
-            <div class="card-header">
-                <span id="off">Até 70% off</span>
-            </div>
-            <div class="card-body">
-                <section class="img-slide">
-                    <img class="slides" src="static/geladeira.jpeg">
-                    <img class="slides" src="static/ventilador.jpg">
-                    <img class="slides" src="static/mondas.jpeg">
-                </section>
-            </div>
-
-        </section>
-        <!-- --------------------------------------------fim  slides    -------------->
+    <section class="section-container section_amarelo">
 
 
         <!-- -------------------------------------------------------form cadastro -->
         <div class="aside">
+            <div id='header-cadastro' class="">
+                Cadastre seu email e receba nossas super ofertas
+            </div>
             <form id="form_cadastro" method="POST" class="form_cadastro" onsubmit="save_email()">
                 <p class="input_cadastro">
                     <label for="nome">Nome</label>
@@ -133,12 +118,13 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email">
                 </p>
-                <p class="input_cadastro">
-                <div id="loading" class="loading" style="display: none;">
-                    <img src="static/load.gif" alt="">
-                </div>
-                <small id="erro" style="display: none;"></small>
-                <small id="success" style="display: none;"></small>
+                <p class="">
+                    <small id="info" style="display: block;">Preencha com seus dados:</small>    
+                    <center id="loading" class="loading" style="display: none;">
+                        <img src="static/load.gif" alt="">
+                    </center>
+                    <small id="erro" style="display: none;"></small>
+                    <small id="success" style="display: none;"></small>
                 </p>
                 <p class="center">
                     <input type="submit" id="submit" />
@@ -156,6 +142,17 @@
     <div class="footer">
         <p>®Jeferson Luis Silveira</p>
     </div>
+
+    <div id="seta-baixo">
+        <p>Ver Promoções</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+            class="bi bi-arrow-down text-white" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        </svg>
+    </div>
+
+
 
 </body>
 <script src="js/script.js"></script>

@@ -32,26 +32,30 @@
 .section_amarelo{
   background-image: url('../static/4813762.jpg');
     background-repeat: no-repeat;    
+    
 }
 
 /* -----------------------------------------------------section presentes */
 .section_presente {
   background-image: url('../static/19995032.jpg');
   height: 100vh;
-  width: 100%;
-    width: 100%;
-    background-size: cover;
+  width: 100%;    
+  background-size: cover;
 }
-#presentes{
- 
-  height: auto;
+.galeria{
   margin-top: 6rem;
-  
 }
 .img_galery{  
-  max-height: 100px;
-  width: auto;
+  max-height: 80px;    
+}
+.img_galery_sm{
+  max-height: 3rem;
   
+}
+.galeria_sm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 
@@ -85,17 +89,23 @@
   border: 4px solid #d930304d;
 }
   
-  .header {
+  .header_nav {
     background-color: #D9A404;
-    color: #ffffff;
-    padding: 10px;
-    
+    color: #0D0D0D;
+    padding: 5px;    
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    box-shadow: 3px 3px 3px white;
+    border: white;
   }
+  .header_nav a{
+    text-decoration: none;
+    color: #0D0D0D;
+  }
+
   #text-nav{
-      margin-left: 4rem;
+      margin-left: 2rem;
       display: flex;
       justify-content: space-around;
   }
@@ -119,7 +129,7 @@
   }
   /*--------------------------------------------------------------------cadastro */
   .aside {
-    height: 24rem;
+    height: 30rem;
     background-color: white;
     padding: 15px;
     color: #D93030;    
@@ -132,6 +142,13 @@
     border-radius: 5px;
     max-width: 400px;
   }
+  #header-cadastro{
+    background-color: #D93030;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
   .input_cadastro{
     margin: 10px 0;
   }
@@ -213,13 +230,23 @@
     box-shadow: 2px 2px 2px #D9A404;
     
 }
+.slides{
+  width: 100px;
+}
+#off{
+  font-size: 1rem;
+  background-color: #D93030;
+  color: white;
+  padding: 0 1rem;
+}
+
   .img-slide img{
     width: 10rem;   
     display: flex;
     justify-content: center;
 }
-.card-header{
-    padding: .5rem;    
+.slides-top{
+    padding: .4rem;    
     background-color:white;
     font-weight: bolder;
     display: flex;
@@ -264,13 +291,13 @@ div.gallery {
   background-color: #e7c1c1;
   padding: .5rem 4rem ;
   color: #5f1313;
-  font-size: .5rem;
+  font-size: 12px;
 }
 #success{
   background-color: #b2ecbc;
-  padding: .5rem 4rem ;
+  padding: .5rem 3rem ;
   color: #0a4729;
-  font-size: .5rem;
+  font-size: 12px;
 }
 
 #loading img{
@@ -278,3 +305,12 @@ div.gallery {
   
   height: auto;
 }
+#seta-baixo{
+  position: fixed;
+  bottom: 15%;
+  left: 2rem;
+  color: white;
+  
+  
+}
+
